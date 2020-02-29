@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.aldiansyah.moviecataloguesub5">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="id.aldiansyah.moviecataloguesub5.READ_WRITE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".search.tvShow.SearchTvShowActivity" />
+        <activity android:name=".setting.SettingActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".detail.TvShowDetailActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".detail.MoviesDetailActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".search.movies.SearchActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <receiver
+            android:name=".setting.reminder.ReleaseReminder"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".setting.reminder.DailyReminder"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".setting.reminder.ReleaseReminderService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".widget.FavoriteBannerWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/favorite_banner_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <provider
+            android:name=".provider.MoviesFavoriteProvider"
+            android:authorities="id.aldiansyah.moviecataloguesub5.provider"
+            android:exported="true"
+            android:permission="id.aldiansyah.moviecataloguesub5.READ_WRITE" />
+    </application>
+
+</manifest>

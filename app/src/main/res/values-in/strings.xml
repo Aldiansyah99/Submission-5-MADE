@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieCatalogueSub5</string>
+    <string name="text_tv_show">Acara Tv</string>
+    <string name="text_movies">Film</string>
+    <string name="text_favorite">Favorit</string>
+    <string name="text_title">Judul</string>
+    <string name="text_0_0">0.0</string>
+    <string name="text_tab_fav_movies">Film</string>
+    <string name="text_tab_fav_tvShow">Acara Tv</string>
+    <string name="release_date">Tanggal Rilis :</string>
+    <string name="vote_average">Suara Rata-Rata :</string>
+    <string name="text_overview">Ikhtisar</string>
+    <string name="text_popularity">Popularitas</string>
+    <string name="first_air_date">Tayang Pertama :</string>
+    <string name="vote_count">Suara</string>
+    <string name="there_are_no_favorite_movies">Tidak Ada Film Favorit</string>
+    <string name="there_are_no_favorite_tvShow">Tidak Ada Acara Tv Favorit</string>
+    <string name="text_open_detail_movies">Buka Detail Film</string>
+    <string name="text_delete_item">Hapus Film</string>
+    <string name="text_change_language">Ubah Bahasa</string>
+    <string name="text_delete_succsessfully">Berhasil Dihapus</string>
+    <string name="text_add_success">Berhasil Ditambahkan</string>
+    <string name="appwidget_text">FAVORITE BANNER</string>
+    <string name="add_widget">Tambahkan widget</string>
+    <string name="empty_text">TIDAK ADA DATA</string>
+    <string name="title_date_of_release">Tanggal Rilis</string>
+    <string name="message_daily_reminder">Lama Tidak Bertemu! Buka Sekarang!</string>
+    <string name="daily_reminder">Pengigat Harian</string>
+    <string name="release_today_reminder">Pengingat Rilis Harian</string>
+    <string name="on_release_reminder">Pengingat Rilis Aktif</string>
+    <string name="off_release_reminder">Pengingat Rilis Non-Aktif</string>
+    <string name="new_release">Rilis Terbaru</string>
+    <string name="on_daily_reminder">Pengigat Harian Aktif</string>
+    <string name="off_daily_reminder">Pengigat Harian Non-Aktif</string>
+    <string name="open_drawer">Buka Navigasi</string>
+    <string name="close_drawer">Tutup Navigasi</string>
+    <string name="text_hint_search">Masukkan Kata Kunci</string>
+    <string name="text_search_movies">Cari Film</string>
+    <string name="text_search_tvshow">Cari Acara Tv</string>
+    <string name="text_header_catalogue_movie">Catalogue  \nMovie</string>
+    <string name="text_desc_daily_reminder">Aktifkan untuk mengingatkan tiap hari</string>
+    <string name="text_desc_release_today_reminder">Aktifkan untuk mengingatkan film rilis</string>
+    <string name="text_setting">Pengaturan</string>
+</resources>
